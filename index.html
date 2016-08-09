@@ -1,0 +1,203 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/default.js"></script>
+<link rel='stylesheet' type='text/css' href='css/style.css'>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css">
+<link rel='stylesheet' type='text/css' href='css/select2.css'>
+</head>
+<body>
+<h1>Google Search Console API</h1>
+<div class="box">
+  <form action="#" name="apiform" method="POST">
+  <div class="category">
+    <p><span class="label small_text">※=必須</span></p>
+    <span class="label">※プロパティ</span>
+    <select name="property_uri" class="long" id="s-validate" multiple="multiple">
+      <option value="0">－</option>
+      <option value="https://employment.en-japan.com/">https://employment.en-japan.com/</option>
+      <option value="https://en-hyouban.com/">https://en-hyouban.com/</option>
+      <option value="https://employment-enjapan.biz/ ">https://employment-enjapan.biz/</option>
+      <option value="https://enagent.com/">https://enagent.com/</option>
+      <option value="http://careerhack.en-japan.com">http//careerhack.en-japan.com</option>
+      <option value="https://employment.en-japan.com/list_new_search/">https://employment.en-japan.com/list_new_search/</option>
+      <option value="https://employment.en-japan.com/tenshoku-daijiten/">https://employment.en-japan.com/tenshoku-daijiten/</option>
+      <option value="https://employment.en-japan.com/woman/">https://employment.en-japan.com/woman/</option>
+      <option value="https://haken.en-japan.com/">https://haken.en-japan.com/</option>
+      <option value="https://hb.en-japan.com/">https://hb.en-japan.com/</option>
+      <option value="http://partners.en-japan.com/">http://partners.en-japan.com/</option>
+      <option value="http://womanmart.en-japan.com/">http://womanmart.en-japan.com/</option>
+      <option value="https://womanmart.en-japan.com/">https://womanmart.en-japan.com/</option>
+      <option value="http://women.en-japan.com/">http://women.en-japan.com/</option>
+      <option value="https://women.en-japan.com/">https://women.en-japan.com/</option>
+      <option value="http://www.enjapan.com/">http://www.enjapan.com/</option>
+      <option value="https://www.enjapan.com/20pj/">https://www.enjapan.com/20pj/</option>
+      <option value="https://mid-tenshoku.com/news/">https://mid-tenshoku.com/news/</option>
+      <option value="https://womanmart.en-japan.com/">https://womanmart.en-japan.com/</option>
+      <option value="https://www.wara-cha.com/">https://www.wara-cha.com/</option>
+    </select>
+  </div>
+  <div class="category">
+    <input type="checkbox" name="clicks" checked disabled/><span class="label checklabel">※クリック</span>
+    <input type="checkbox" name="impressions" /><span class="label checklabel">表示回数</span>
+    <input type="checkbox" name="ctr" /><span class="label checklabel">CTR</span>
+    <input type="checkbox" name="position" /><span class="label checklabel">掲載順位</span>
+  </div>
+  <div class="category">
+    <span class="label small_text">※どちらか1つ選択必須。デフォルトはクエリを選択</span>
+  </div>
+  <div class="category">        
+    <input type="checkbox" name="query" checked /><span class="label checklabel">クエリ</span>
+    <select name="query_operator" class="short">
+      <option value="1">含む</option>
+      <option value="2">含まない</option>
+      <option value="3">一致する</option>
+    </select>
+    <input type="text" name="query_expression" />
+  </div>
+  <div class="category">
+    <input type="checkbox" name="page" /><span class="label checklabel">ページ</span>
+    <select name="page_operator" class="short">
+      <option value="1">含む</option>
+      <option value="2">含まない</option>
+      <option value="3">一致する</option>
+    </select>
+    <input type="text" name="page_expression" />
+  </div>
+  <div class="category">
+    <span class="label">国</span>
+    <select name="country" class="middle">
+      <option value="0">-(全世界)</option>
+      <option value="jpn">日本</option>
+      <option value="gbr">イギリス</option>
+      <option value="cxx">不明な地域</option>
+      <option value="usa">アメリカ合衆国</option>
+      <option value="chn">中国</option>
+      <option value="vnm">ベトナム</option>
+      <option value="hkg">香港</option>
+      <option value="twn">台湾</option>
+      <option value="sgp">シンガポール</option>
+      <option value="ind">インド</option>
+      <option value="tha">タイ</option>
+      <option value="aus">オーストラリア</option>
+      <option value="bra">ブラジル</option>
+      <option value="kor">大韓民国</option>
+      <option value="svk">スロバキア</option>
+      <option value="idn">インドネシア</option>
+      <option value="ita">イタリア</option>
+      <option value="can">カナダ</option>
+      <option value="deu">ドイツ</option>
+      <option value="mys">マレーシア</option>
+      <option value="fra">フランス</option>
+      <option value="tur">トルコ</option>
+      <option value="phl"フィリピン></option>
+      <option value="nga">ナイジェリア</option>
+      <option value="irl">アイルランド</option>
+      <option value="irn">イラン</option>
+      <option value="gum">グアム</option>
+      <option value="sau">サウジアラビア</option>
+      <option value="rus">ロシア</option>
+      <option value="arg">アルゼンチン</option>
+      <option value="mmr">ミャンマー</option>
+      <option value="rou">ルーマニア</option>
+      <option value="mex">メキシコ</option>
+      <option value="bel">ベルギー</option>
+      <option value="che">スイス</option>
+      <option value="esp">スペイン</option>
+      <option value="nld">オランダ</option>
+      <option value="nzl">ニュージーランド</option>
+      <option value="cze">チェコ共和国</option>
+      <option value="aut">オーストリア</option>
+      <option value="are">アラブ首長国連邦</option>
+      <option value="mng">モンゴル</option>
+      <option value="khm">カンボジア</option>
+      <option value="zaf">南アフリカ</option>
+    </select>
+    <span class="label selectlabel">デバイス</span>
+    <select name="device" class="short">
+      <option value="0">－</option>
+      <option value="DESKTOP">DESKTOP</option>
+      <option value="MOBILE">MOBILE</option>
+      <option value="TABLET">TABLET</option>
+    </select>
+    <span class="label selectlabel">検索タイプ</span>
+    <select name="search_type" class="short">
+      <option value="0">－</option>
+      <option value="web">web</option>
+      <option value="image">image</option>
+      <option value="video">video</option>
+    </select>
+  </div>
+  <div class="category">
+    <span class="label">※期間</span>
+    <input type="radio" name="duration" value="1" checked /><span class="label checklabel">range</span>
+    <input type="radio" name="duration" value="2" /><span class="label checklabel">daily</span>
+  </div>
+  <div class="category">
+    <span class="label">※開始日</span><input type="text" name="start_date" id="startDate" class="datepicker" />
+    <span class="label selectlabel">※終了日</span><input type="text" name="end_date" id="endDate" class="datepicker" />
+  </div>
+  <div class="category">
+    <span class="label">MAX行</span><input type="text" id="rowLimit" name="row_limit" />
+  </div>
+  </form>
+  <div class="buttons">
+    <button type="" id="l-btn" class="btn btn-md">送信</button>
+    <button type="" id="csv-btn" class="btn btn-md">CSV出力</button>
+  </div>
+</div>
+<script type="text/javascript">
+(function($) {
+  $.fn.extend({
+  select2_sortable: function() {
+    var select = $(this);
+    $(select).select2();
+    var ul = $(select).prev('.select2-container').first('ul');
+    ul.sortable({
+      placeholder : 'ui-state-highlight',
+      items       : 'li:not(.select2-search-field)',
+      tolerance   : 'pointer',
+      stop: function() {
+        $($(ul).find('.select2-search-choice').get().reverse()).each(function() { 
+          var id = $(this).data('select2Data').id;
+          var option = select.find('option[value="' + id + '"]')[0];
+          $(select).prepend(option);
+        });
+      }
+    });
+  }
+});
+}(jQuery));
+
+$(function() {
+  $("select").select2_sortable();
+
+  $("#l-btn").click(function() {
+    var formdata = $("form[name='apiform']");
+    var param = {};
+    var uriList = [];
+    $(formdata.serializeArray()).each(function(i, v) {
+      (v.name == "property_uri") ? uriList.push(v.value) : param[v.name] = v.value;
+    });
+    param['property_uri'] = uriList;
+    $.ajax({
+      type:'POST',
+      url: './query.py',
+      data: param,
+      success: function(response) {
+        alert(response);
+      }
+    });
+  });
+
+  $("#csv-btn").click(function() {
+    location.href="./get_csv.py";
+  });
+});
+</script>
+</body>
+</html>

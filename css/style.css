@@ -1,0 +1,207 @@
+@charset "UTF-8";
+body {
+        font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+        color: #1a1a1a;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+}
+h1 {
+        margin: 0 auto 15px;
+        font-weight: normal;
+        text-align: center;
+        color: #795209;
+}
+a {
+        color: #5D0C12;
+        text-decoration: none;
+        overflow: hidden;
+        outline: none;
+        font-weight: bold;
+}
+.link {
+        margin: 0 0 60px 0;
+}
+.title {
+        margin: 30px 0 50px 0;
+        width: 1888px;
+        text-align: center;
+}
+dd {
+        margin: 0 auto 4px;
+        font-weight: normal;
+        text-align: center;
+}
+span {
+        text-align: left;
+}
+.long {
+    min-width: 420px;
+}
+.middle {
+    min-width: 220px;
+}
+.short {
+    min-width: 120px;
+}
+.label {
+        color: #795209;
+        font-weight: bold;
+        font-size: 140%;
+}
+.selectlabel {
+        margin-left: 20px;
+}
+.checklabel {
+        margin-right: 20px;
+}
+.category {
+        text-align: left;
+        width: 800px;
+        margin: 20px auto;
+}
+.box {
+        padding: 10px;
+        text-align: center;
+        height: auto;
+        margin: 20px auto;
+}
+#wrap-login {
+        padding: 120px 0 130px;
+        text-align: center;
+}
+
+#wrap-login h1 {
+        line-height: 1.5;
+}
+
+#wrap-login .user {
+        display: inline-block;
+        padding: 15px 10px;
+        background: #dede8d;
+        border-radius: 50%;
+        font-size: 38px;
+}
+
+#wrap-login table {
+        color: #795209;
+        width: 380px;
+        margin: 40px auto 50px;
+}
+
+#wrap-login table th,#wrap-login table td {
+        padding: 8px 0;
+}
+
+#wrap-login table th {
+        width: 95px;
+        text-align: left;
+}
+
+#wrap-login table input {
+        width: 100%;
+}
+input,textarea,button,select {
+    font-size: 13px;
+}
+
+input[type='text'],input[type='password'],textarea {
+    padding: 2px 8px;
+}
+
+input[type='text'],input[type='password'],select,textarea {
+    border: 1px solid #EAB4AD;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+select {
+    padding: 5px 8px;
+}
+
+input,button,select,textarea {
+    font-size: inherit ;
+    font-family: inherit ;
+}
+
+input[type='file'],input[type='checkbox'],input[type='radio'] {
+    cursor: pointer;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+button:focus,input[type='text']:focus,input[type='password']:focus,input[type='file']:focus,input[type='checkbox']:focus,input[type='radio']:focus,select:focus,textarea:focus {
+    outline: none;
+}
+.btn-md {
+    min-width: 190px;
+    padding: 14px 20px;
+    font-size: 15px 
+}
+.btn {
+    padding: 12px 12px;
+    background: #E6B7B3;
+    color: #461414;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+    position: relative;
+    -webkit-text-shadow: 0 1px 1px #888;
+    -moz-text-shadow: 0 1px 1px #888;
+    -ms-text-shadow: 0 1px 1px #888;
+    -o-text-shadow: 0 1px 1px #888;
+    text-shadow: 0 1px 1px #888
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+.login_info {
+    text-align: right;
+    padding: 10px 244px 0 0px;
+}
+.logout_btn {
+        padding: 2px;
+        width: 130px;
+        margin: 0 0 0 18px;
+}
+.btn a {
+        color: #fff;
+        font-weight: normal;
+}
+.small_text {
+        color: #795209;
+        padding: 8px;
+        font-size: 90%;
+}
+.btn_red {
+    background: #5D0C12;
+}
+.btn_link {
+        width: 236px;
+}
+.btn:hover {
+        background: #99544E;
+}
+.wrap-box {
+        text-align: center;
+        padding: 0px 10px;
+}
+.submit {
+        margin: 10px auto;
+        width: 240px;
+}
+.buttons {
+        margin: 20px auto;
+        width: 480px;
+}
+.errorBox {
+    background-color: #fff0f0;
+}
+.error {
+    font-weight:bold;
+    color:#883B3F;
+}
